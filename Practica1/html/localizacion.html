@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <title>JellyWaves</title>
+  <script src="https://kit.fontawesome.com/1651ee51d0.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="../css/estilo1.css">
+</head>
+<body>
+    <script type="text/javascript" src="../js/script1.js"></script>
+
+    <nav class="navbar">
+        <div class="navbar-container container">
+          <ul id="menu-items" class="sidenav">
+            <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
+            <li><a href="../index.html"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp; Inicio</a></li>
+            <li><a href="#location-container"><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp; Localización</a></li>
+            <li><a href="#review"><i class="fa fa-star" aria-hidden="true"></i>&nbsp; Reseñas</a></li>
+            <li><a href="#contacts-container"><i class="fa fa-address-book" aria-hidden="true"></i>&nbsp; Contacto</a></li>
+          </ul>
+        </div>
+    </nav>
+
+    <div id="myHomenav" class="homenav">
+        <span class="burger-menu" style="font-size:30px;cursor:pointer" onclick="openNav()" data-menu="6">&#9776; </span>
+        <div class="title">
+          <h2 id="jelly">Jelly</h2><h2 id="waves">Waves</h2>
+        </div>
+        <button id="toggle-btn" type="button" onclick="myFunction_set()">&#9728;</button>
+    </div> 
+
+    <div id="location-container">
+        <h1 id="location-title">Localización</h1>
+        <div id="google-map-container">
+            <iframe id="google-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.4486605168113!2d-99.15681848582527!3d19.436213645603175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f8d24522071f%3A0x20fdc6dd3dcc0c20!2sMonumento%20a%20la%20Revoluci%C3%B3n!5e0!3m2!1ses!2smx!4v1661141152955!5m2!1ses!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+
+    <section id="review">
+      <div class="review-wrapper container">
+        <div class="review">
+          <h2>¡Excelente relación calidad-precio!</h2>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+        </div>
+        <div class="review">
+          <h2>Gran calidad de sonido</h2>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+        </div>
+        <div class="review">
+          <h2>Fabulosos</h2>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+        </div>
+      </div>
+    </section>
+    
+    <footer id="contacts-container">
+        <div class="contacts-squares" id="contacts-title"><h1 id="contacts-title-2">Contactos</h1></div>
+        <div class="contacts-squares" id="contacts-more-info">
+          <h4>More Info</h4>
+          <p id="more-info-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="contacts-squares" id="contacts-social" >
+          <h4>Social</h4>
+          <p class="social-text"><i class="fa fa-facebook-square">&nbsp; www.fake-adidas-facebook.com</p></i>
+          <p class="social-text"><i class="fa fa-twitter-square">&nbsp; www.fake-adidas-twitter.com</p></i>
+          </div>
+        <div class="contacts-squares" id="contacts-tel">
+          <h5 class="social-text">Tel:00-0000-0000</h5>
+          <h5 class="social-text">E-mail:jellywaves-fake-email-address@notmail.com</h5>
+        </div>
+      </footer>
+</body>

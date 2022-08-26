@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <title>JellyWaves</title>
+  <script src="https://kit.fontawesome.com/1651ee51d0.js" crossorigin="anonymous"></script>    
+  <link rel="stylesheet" type="text/css" href="css/estilo1.css">    
+</head>    
+<body>
+  <script type="text/javascript" src="js/script1.js"></script>
+  
+  <nav class="navbar">
+    <div class="navbar-container container">
+      <ul id="menu-items" class="sidenav">
+        <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></li>
+        <li><a href="#inicio"><i class="fa fa-home fa-fw" aria-hidden="true"></i>&nbsp; Inicio</a></li>
+        <li><a href="#acerca-de"><i class="fa fa-book" aria-hidden="true"></i>&nbsp; Acerca de</a></li>
+        <li><a href="#articulos"><i class="fa fa-shopping-bag" aria-hidden="true"></i>&nbsp; Articulos</a></li>
+        <li><a href="html/localizacion.html"><i class="fa fa-map-marker" aria-hidden="true"></i>&nbsp; Localización</a></li>
+        <li><a href="#review"><i class="fa fa-star" aria-hidden="true"></i>&nbsp; Reseñas</a></li>
+        <li><a href="#contacts-container"><i class="fa fa-address-book" aria-hidden="true"></i>&nbsp; Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  <div id="myHomenav" class="homenav">
+    <span class="burger-menu" style="font-size:30px;cursor:pointer" onclick="openNav()" data-menu="6">&#9776; </span>
+    <div class="title">
+      <h2 id="jelly">Jelly</h2><h2 id="waves">Waves</h2>
+    </div>
+    <button id="toggle-btn" type="button" onclick="myFunction_set()">&#9728;</button>
+  </div> 
+
+  <section id="inicio" class="no-parallax">
+    <div id="inicio-container" class="container">
+      <div id="video-section">
+        <video src="resources/video.mp4" autoplay="" muted="" loop=""></video>
+      </div>
+   </div>
+  </section>
+  
+  <section id="acerca-de"  class="no-parallax">
+    <div class="acerca-de-wrapper container">
+      <div id="acerca-de-text">
+        <h2>Acerca de nuestra marca</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse ab
+          eos omnis, nobis dignissimos perferendis et officia architecto,
+          fugiat possimus eaque qui ullam excepturi suscipit aliquid optio,
+          maiores praesentium soluta alias asperiores saepe commodi
+          consequatur? Perferendis est placeat facere aspernatur!. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse ab
+          eos omnis, nobis dignissimos perferendis et officia architecto,
+          fugiat possimus eaque qui ullam excepturi suscipit aliquid optio,
+          maiores praesentium soluta alias asperiores saepe commodi
+          consequatur? Perferendis est placeat facere aspernatur!. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse ab
+          eos omnis, nobis dignissimos perferendis et officia architecto,
+          fugiat possimus eaque qui ullam excepturi suscipit aliquid optio,
+          maiores praesentium soluta alias asperiores saepe commodi
+          consequatur? Perferendis est placeat facere aspernatur!
+        </p>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse ab
+          eos omnis, nobis dignissimos perferendis et officia architecto,
+          fugiat possimus eaque qui ullam excepturi suscipit aliquid optio,
+          maiores praesentium soluta alias asperiores saepe commodi
+          consequatur? Perferendis est placeat facere aspernatur!.
+        </p>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse ab
+          eos omnis, nobis dignissimos perferendis et officia architecto,
+          fugiat possimus eaque qui ullam excepturi suscipit aliquid optio,
+          maiores praesentium soluta alias asperiores saepe commodi
+          consequatur? Perferendis est placeat facere aspernatur!. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse ab
+          eos omnis, nobis dignissimos perferendis et officia architecto,
+          fugiat possimus eaque qui ullam excepturi suscipit aliquid optio,
+          maiores praesentium soluta alias asperiores saepe commodi
+          consequatur? Perferendis est placeat facere aspernatur!.
+        </p>
+      </div>
+    </div>
+  </section>
+  
+  <section id="articulos"  class="no-parallax">
+    <div id="articulos-container">
+      <div class="hp-container">
+        <a href=https://www.pngplay.com/image/416467 target="_blank">
+        <img class="hp-image" src="resources/In-Ear-Headphones-Transparent-PNG.png" alt="In-Ear-Headphones" width="200"
+         height="200">
+        </a>
+         <a class="hp-links" href=https://www.pngplay.com/image/416467 target="_blank">In-Ear Headphones</a>
+      </div>
+
+      <div class="hp-container">
+        <a href=https://www.pngplay.com/image/416467 target="_blank">
+        <img class="hp-image" src="resources/On-Ear-Headphones-Background-PNG-Image.png" alt="On-Ear-Headphones" width="200"
+         height="200">
+        </a>
+         <a class="hp-links" href=https://www.pngplay.com/image/416467 target="_blank">On-Ear Headphones</a>
+      </div>
+
+      <div class="hp-container">
+        <a href=https://www.pngplay.com/image/416467 target="_blank">
+        <img class="hp-image" src="resources/Over-Ear-Headphones-Transparent-Background.png" alt="Over-Ear-Headphones" width="200"
+         height="200">
+        </a>
+         <a class="hp-links" href=https://www.pngplay.com/image/416467 target="_blank">Over-Ear Headphones</a>
+      </div>
+      
+    </div>
+  </section>
+
+  <section id="form-section">
+    <form action="html/pagina-error.html">
+      <h2>Mandanos tu correo para mandarte ofertas</h2>
+      <fieldset>
+        <legend>Información personal</legend>    
+        <p><label>Nombre: <input type="text" name="nombre"></label></p>
+        <p><label>E-mail: <input type="text" name="e-mail"></label></p>    
+        <p><label>Dirección: <input type="text" name="direccion"></label></p>    
+      </fieldset>    
+      <br>
+      <fieldset>    
+        <legend>Preferencias</legend>    
+        <p>    
+          <label><input type="checkbox" name="musica"> Musica</label><br>        
+          <label><input type="checkbox" name="videojuegos"> Videojuegos</label><br>    
+          <label><input type="checkbox" name="deportes"> Deportes</label><br>    
+        </p>    
+      </fieldset>    
+      <input id="sent-button" type="submit" value="Enviar">    
+    </form>
+  </section>
+
+  <section id="prueba-audio">
+    <div class="container">
+      <h2>Prueba la calidad de tus audifonos</h2>
+      <audio controls src="resources/Coldplay - Speed Of Sound.mp3" ></audio>
+    </div>
+  </section>
+          
+  <section id="review">
+    <div class="review-wrapper container">
+      <div class="review">
+        <h2>¡Excelente relación calidad-precio!</h2>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+      </div>
+      <div class="review">
+        <h2>Gran calidad de sonido</h2>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+      </div>
+      <div class="review">
+        <h2>Fabulosos</h2>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+      </div>
+    </div>
+  </section>
+
+  <section id="relleno">
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti tempora eius, sapiente rem saepe modi! 
+      Ex sunt adipisci eum praesentium. Non sit, ea dolores tempora eveniet recusandae voluptatibus corporis ipsa!
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis aliquam aliquid dolor quis odit veritatis, 
+      voluptate temporibus ratione tempora magnam placeat sapiente itaque, commodi iste eum molestias adipisci, atque 
+      unde! Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci incidunt ea sunt impedit dignissimos 
+      voluptatum nisi, possimus molestias consequuntur repellat nesciunt laudantium error! Earum optio obcaecati consequuntur 
+      maiores blanditiis. Modi!
+    </p>
+  </section>
+  
+  <footer id="contacts-container">
+    <div class="contacts-squares" id="contacts-title"><h1 id="contacts-title-2">Contactos</h1></div>
+    <div class="contacts-squares" id="contacts-more-info">
+      <h4>More Info</h4>
+      <p id="more-info-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class="contacts-squares" id="contacts-social" >
+      <h4>Social</h4>
+      <p class="social-text"><i class="fa fa-facebook-square">&nbsp; www.fake-adidas-facebook.com</p></i>
+      <p class="social-text"><i class="fa fa-twitter-square">&nbsp; www.fake-adidas-twitter.com</p></i>
+      </div>
+    <div class="contacts-squares" id="contacts-tel">
+      <h5 class="social-text">Tel:00-0000-0000</h5>
+      <h5 class="social-text">E-mail:jellywaves-fake-email-address@notmail.com</h5>
+    </div>
+  </footer>
+</body>
+</html>
