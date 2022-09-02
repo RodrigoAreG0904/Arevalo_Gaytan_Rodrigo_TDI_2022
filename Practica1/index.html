@@ -106,24 +106,28 @@
       </div>
       
     </div>
+
   </section>
 
+  <button id="prueba-arreglo" onclick="show_headphones()" value="prueba-arreglo">prueba-arreglo</button> 
+  <button id="prueba-while" onclick="show_while()" value="prueba-while">prueba-while</button>
   <section id="form-section">
-    <form action="html/pagina-error.html">
+    <form onsubmit="return valida_envia(this)">
       <h2>Mandanos tu correo para mandarte ofertas</h2>
       <fieldset>
         <legend>Información personal</legend>    
-        <p><label>Nombre: <input type="text" name="nombre"></label></p>
-        <p><label>E-mail: <input type="text" name="e-mail"></label></p>    
-        <p><label>Dirección: <input type="text" name="direccion"></label></p>    
+        <p><label>Nombre: <input id="nombre-f" type="text" name="nombre"></label></p>
+        <p><label>E-mail: <input id="email-f" type="email" name="e-mail"></label></p>    
+        <p><label>Dirección: <input id="direccion-f" type="text" name="direccion"></label></p>    
       </fieldset>    
       <br>
       <fieldset>    
         <legend>Preferencias</legend>    
         <p>    
-          <label><input type="checkbox" name="musica"> Musica</label><br>        
-          <label><input type="checkbox" name="videojuegos"> Videojuegos</label><br>    
-          <label><input type="checkbox" name="deportes"> Deportes</label><br>    
+          <label><input class="checkboxes" type="checkbox" name="musica"> Musica</label><br>        
+          <label><input class="checkboxes" type="checkbox" name="videojuegos"> Videojuegos</label><br>    
+          <label><input class="checkboxes" type="checkbox" name="deportes"> Deportes</label><br>
+          <label><input class="checkboxes" type="checkbox" name="otro"> Otro</label><br>    
         </p>    
       </fieldset>    
       <input id="sent-button" type="submit" value="Enviar">    

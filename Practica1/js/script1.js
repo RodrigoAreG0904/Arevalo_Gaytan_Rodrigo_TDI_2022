@@ -1,6 +1,6 @@
 function openNav() {
-    document.getElementById("menu-items").style.width = "250px";
-  }
+  document.getElementById("menu-items").style.width = "250px";
+}
   
   function closeNav() {
     document.getElementById("menu-items").style.width = "0";
@@ -39,3 +39,49 @@ function openNav() {
     let value = this.window.scrollY;
     video.style.opacity = value
   })
+
+  //Parte del formulario para práctica 3
+  function valida_envia(form){
+    //valido el nombre
+    if (document.getElementById('nombre-f').value.length==0){
+         alert("Tiene que escribir su nombre")
+         return 0;
+    }
+
+    if (document.getElementById('email-f').value.length==0){
+      alert("Tiene que escribir su correo")
+      return 0;
+    }
+
+    if (document.getElementById('direccion-f').value.length==0){
+      alert("Tiene que escribir su direccion")
+      return 0;
+    }
+
+    //valido el interés
+    // no supe como validar las casillas :c
+    //el formulario se envia
+    alert("Muchas gracias por enviar el formulario");
+    document.form.submit();
+  }
+
+  function show_headphones(){
+    let headphones = ["air-pods", "marshall-majorIV", "beats"]
+    for (let i = 0; i < headphones.length; i++) {
+      // Se ejecuta 5 veces, con valores del paso 0 al 4.
+      alert('Vendemos todo tipo de audifonos, vendemos ' + headphones[i]);
+    }
+  }
+
+  function show_while(){
+    let n = 0;
+    let x = 0;
+    alert('vamos a regresar la suma de 1, 2 y 3');
+    alert(x);
+    while (n < 3) {
+      n++;
+      x += n;
+      alert(x);
+    }
+
+  }
